@@ -1,0 +1,71 @@
+﻿@inject Assingment01.DataAccess.Prn221Asm1Context _context
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Assignment</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/Assingment01.styles.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand">Assignment</span>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        @if (Context.Session.GetInt32("AccountId") != null)
+                        {
+                            var accountId = Context.Session.GetInt32("AccountId");
+                            var customer = _context.Customers.FirstOrDefault(c => c.CustomerId == accountId.ToString());
+                            @if (customer != null)
+                            {
+                                <li class="nav-item" style="align-content:center">
+                                    <span class="navbar-text">Welcome @customer.ContactName!</span>
+                                </li>
+                            }
+                            else
+                            {
+                                
+                            }
+                            <li class="nav-item">
+                                <a class="btn btn-link nav-link" href="/Customer/Details">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <form method="post" asp-page="/Logout">
+                                    <button type="submit" class="btn btn-link nav-link">Logout</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="btn btn-link nav-link" href="/login/index">Login</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; @DateTime.Now.Year - Assignment - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
