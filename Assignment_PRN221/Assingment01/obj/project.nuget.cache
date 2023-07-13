@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M7LRAuRGj2SXViTRfma4mpimWO4QYOE9Yx20m0N72BS11Ceh6iqjjJOQIJdeKeeaUH8kkcGn2RjrgyGZwdcymA==",
+  "dgSpecHash": "mpSPNyJe18p+3ICvlyfCzdOx8RlVo7tk11MqxWeE5q1/nVMoWQgTy7zZfYtpeiZ8e1p1vjo9Go0HKapBmighlg==",
   "success": true,
-  "projectFilePath": "E:\\Assignment_PRN221\\Assignment_PRN221\\Assingment01\\Assingment01.csproj",
+  "projectFilePath": "E:\\PRN221_Project\\Assignment_PRN221\\Assingment01\\Assingment01.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

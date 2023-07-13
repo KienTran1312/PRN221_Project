@@ -3477,11 +3477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Assignment_PRN221\\Assignment_PRN221\\Assingment01\\Assingment01.csproj",
+      "projectUniqueName": "E:\\PRN221_Project\\Assignment_PRN221\\Assingment01\\Assingment01.csproj",
       "projectName": "Assingment01",
-      "projectPath": "E:\\Assignment_PRN221\\Assignment_PRN221\\Assingment01\\Assingment01.csproj",
+      "projectPath": "E:\\PRN221_Project\\Assignment_PRN221\\Assingment01\\Assingment01.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "E:\\Assignment_PRN221\\Assignment_PRN221\\Assingment01\\obj\\",
+      "outputPath": "E:\\PRN221_Project\\Assignment_PRN221\\Assingment01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
