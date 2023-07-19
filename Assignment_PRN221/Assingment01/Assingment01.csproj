@@ -14,4 +14,12 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\vendor\choices.js\src\" />
+    <Folder Include="wwwroot\vendor\choices.js\types\" />
+    <Folder Include="wwwroot\vendor\swiper\angular\angular\src\" />
+    <Folder Include="wwwroot\vendor\swiper\angular\esm2015\angular\src\" />
+    <Folder Include="wwwroot\vendor\swiper\types\modules\" />
+  </ItemGroup>
+
 </Project>

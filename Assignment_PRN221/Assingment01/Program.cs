@@ -2,9 +2,6 @@ using Assingment01;
 using Assingment01.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
-
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -34,5 +31,15 @@ app.UseAuthorization();
 app.UseSession();
 
 app.MapRazorPages();
+
+//First landing
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapRazorPages();
+    endpoints.MapGet("/", async context =>
+    {
+        context.Response.Redirect("/Home");
+    });
+});
 
 app.Run();

@@ -167,3 +167,4 @@ E:\PRN221_Project\Assignment_PRN221\Assingment01\obj\Debug\net6.0\refint\Assingm
 E:\PRN221_Project\Assignment_PRN221\Assingment01\obj\Debug\net6.0\Assingment01.pdb
 E:\PRN221_Project\Assignment_PRN221\Assingment01\obj\Debug\net6.0\Assingment01.genruntimeconfig.cache
 E:\PRN221_Project\Assignment_PRN221\Assingment01\obj\Debug\net6.0\ref\Assingment01.dll
+E:\PRN221_Project\Assignment_PRN221\Assingment01\obj\Debug\net6.0\scopedcss\Pages\Shared\_NavLayout.cshtml.rz.scp.css
