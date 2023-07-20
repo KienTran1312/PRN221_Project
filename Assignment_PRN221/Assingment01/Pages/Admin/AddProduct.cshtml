@@ -1,6 +1,7 @@
 ﻿@page
 @model Assingment01.Pages.Admin.AddProductModel
 @{
+    Layout = "_NavLayout";
 }
 <h3>Add New Product</h3>
 
@@ -37,7 +38,7 @@
         <label for="productImage">Product Image:</label>
         <input type="text" class="form-control" id="productImage" name="ProductInput.ProductImage" required>
     </div>
-    <button type="submit" class="btn btn-primary">Add Product</button>
+    <button style="margin-top: 20px" type="submit" class="btn btn-primary">Add Product</button>
 </form>
 @if (TempData["ErrorMessAdd"] != null)
 {
